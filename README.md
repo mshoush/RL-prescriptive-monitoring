@@ -19,9 +19,17 @@ To reproduce the results, please run the following:
 
                                      conda create -n <environment-name> --file requirements.txt
 
-* Next, download the data from the abovementioned link
+* Next, download the data folder from the abovementioned link
 
-* Then run the following shell script to start experiments w.r.t the training, calibration, and testing phases.
+* Then run the following notebooks to prepare the datasets:
+  
+                                  prepare_trafficFines.ipynb
+                                  prepare_data_bpic2012.ipynb
+                                  prepare_data_bpic2017.ipynb
+
+  
+*
+*   shell script to start experiments w.r.t the training, calibration, and testing phases.
 
 
                                      ./run_training_calibration.sh
