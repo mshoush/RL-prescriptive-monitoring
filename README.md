@@ -28,7 +28,7 @@ To reproduce the results, please run the following:
                                   prepare_data_bpic2017.ipynb
 
   
-*   Next, run the following shell script to start experiments w.r.t the offline and online phases. Replace  <datasetName> by bpic2012, bpic2017, or traficFines. 
+*   Next, run the following shell script to start experiments w.r.t the offline and online phases. Replace  datasetName by bpic2012, bpic2017, or traficFines. 
 
 
                                      ./runAll.sh
