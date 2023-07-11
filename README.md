@@ -28,14 +28,17 @@ To reproduce the results, please run the following:
                                   prepare_data_bpic2017.ipynb
 
   
-*
-*   shell script to start experiments w.r.t the training, calibration, and testing phases.
+*   Next, run the following shell script to start experiments w.r.t the offline and online phases.
 
 
-                                     ./run_training_calibration.sh
+                                     ./runAll.sh
+                                     ./test_results.sh
+                                     ./run_all_resources.sh 
+
+    
                                      
 
-* Collect results according to EQ1 by running the following script and replace dataname with "bpic2012" or "bpic2017". 
+* Collect results according to RQ1 by running the following script and replace dataname with "bpic2012" or "bpic2017". 
 
                                      python  plot_EQ1.py <dataname>
                                      
