@@ -15,9 +15,9 @@ Datasets can be downloaded from the following link:
 # Reproduce results:
 To reproduce the results, please run the following:
 
-* First, you need to install the environment using
+* First, install the required packages using the following command into your environment:
 
-                                     conda create -n <environment-name> --file requirements.txt
+                                  pip install -r requirementsRL.txt
 
 * Next, download the data folder from the abovementioned link
 
