@@ -34,16 +34,14 @@ To reproduce the results, please run the following:
                                      ./runAll.sh
                                      ./test_results.sh <datasetName> <resultsDir>
                                      ./run_all_resources.sh <datasetName>
-
-    
+ 
                                      
 
-* Collect results according to RQ1 by running the following script and replace dataname with "bpic2012" or "bpic2017". 
+* Collect results according to RQ1 by running the following notebook: 
 
-                                     python  plot_EQ1.py <dataname>
+                                     plot_all_resources.ipynb
                                      
-* Collect results according to EQ2 by running the following "plot_EQ2.ipynb" notebook.  
+* Collect results according to RQ2 by running the following notebook: 
 
-                                     
-                                     
+                                     plot_all_resources.ipynb
 
