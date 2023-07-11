@@ -2,15 +2,13 @@
 
 This project contains supplementary material for the article ["Prescriptive Process Monitoring Under Resource Constraints: A Reinforcement Learning Approach"]("add link here") by [Mahmoud Shoush](https://scholar.google.com/citations?user=Jw4rBlkAAAAJ&hl=en) and [Marlon Dumas](https://kodu.ut.ee/~dumas/). We propose a prescriptive process monitoring approach that relies on reinforcement Learning an conformal prediction to an intervention policy under limited resources. 
 
-
-The proposed approach consists of three main phases, training, calibration, and testing—In the training phase, we clean and enrich the event log and use it to train predictive and causal models. In the calibration phase, we use an Inductive Conformal Prediction (ICP) algorithm to produce predictions with a guaranteed level of confidence. While the testing phase shows how to operationalize the proposed approach during runtime, and it includes filtering, ranking, and a resource allocator.
-
+This paper investigated the hypothesis that the incorporation of significance, urgency, and capacity factors can augment the process of training an RL agent for triggering interventions in the context of a prescriptive process monitoring system. The paper specifically investigated this question in the context where there is a limited number of resources available to perform interventions in the process.
 
 
 
 # Dataset: 
-Datasets can be found in the following link.
-* [BPIC2017 and BPIC2012, i.e., a loan application process.](https://owncloud.ut.ee/owncloud/s/XRFidFxpw58j4zY)
+Datasets can be downloaded from the following link:
+* [BPIC2017, BPIC2012, and traficFines, i.e., a loan application and road fines processes]{https://owncloud.ut.ee/owncloud/s/5zpcwR8rtpMC7Ko}
 
 
 
