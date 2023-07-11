@@ -43,5 +43,7 @@ To reproduce the results, please run the following:
                                      
 * Collect results according to RQ2 by running the following notebook: 
 
-                                     plot_all_resources.ipynb
+                                     plot_RL_results.ipynb
+
+
 
