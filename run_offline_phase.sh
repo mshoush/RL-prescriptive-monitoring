@@ -7,8 +7,8 @@ datasets=("trafficFines" "bpic2012" "bpic2017")
 for dataset in "${datasets[@]}"
 do
     echo "Starting predictive model for $dataset...";
-    # change the size of the ensemble as you need
-    ens_size=1;
+    # change the size of the ensemble as your needs
+    ens_size=20;
     python predictive_model/get_catboost_pred_uncer.py $dataset results/predictive/$dataset/ $ens_size > out.txt;
     rm out.txt
     sleep 5;
