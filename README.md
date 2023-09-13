@@ -7,7 +7,7 @@ This paper investigated the hypothesis that the incorporation of significance, u
 
 
 # Dataset: 
-Datasets can be downloaded from the following link:
+Original and prepared datasets can be downloaded from the following link:
 * [BPIC2017, BPIC2012, and traficFines, i.e., a loan application and road fines processes](https://owncloud.ut.ee/owncloud/s/5zpcwR8rtpMC7Ko)
 
 
