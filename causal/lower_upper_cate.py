@@ -66,7 +66,7 @@ def get_args():
 
     # dataset
     #parser.add_argument("--debug", type=str_to_bool, default=False)
-    parser.add_argument("--dataset_name", type=str, default="traficFines",choices=["traficFines", "bpic2012","bpic2017"])
+    parser.add_argument("--dataset_name", type=str, default="trafficFines",choices=["trafficFines", "bpic2012","bpic2017"])
     parser.add_argument("--estimator", type=str, default='CausalForest')
     parser.add_argument("--propensity_model", type=str, default='LogisticRegression')
     parser.add_argument("--outcome_model", type=str, default='RandomForestClassifier')

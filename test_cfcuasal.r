@@ -1,6 +1,8 @@
 # https://github.com/lihualei71/cfcausal
 # https://lihualei71.github.io/cfcausal/reference/conformalIte.html
 library("cfcausal")
+
+options(warn=-1)
 args <- commandArgs(trailingOnly = TRUE)
 print(args)
 
@@ -126,7 +128,7 @@ res_filename <- sprintf("./results/conformal_causal/%s/",args)
 
 # Create results directory
 if (!dir.exists(res_filename)) {
-	  dir.create(res_filename)
+	  dir.create(res_filename, recursive = TRUE)
 }
 
 filename <- sprintf("test2_conformalizedTE_%s.csv", args)
