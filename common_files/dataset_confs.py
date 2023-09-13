@@ -89,7 +89,7 @@ for dataset, fname in bpic2012_dict.items():
 
 
 #bpic2012_dict = {"bpic2012": "bpic2012/prepared_treatment_outcome_bpic2012.csv"}
-traficFines_dict = {"traficFines": "traficFines/prepared_treatment_outcome_time_to_event_traficFines.csv"}
+traficFines_dict = {"trafficFines": "trafficFines/prepared_treatment_outcome_time_to_event_trafficFines.csv"}
 
 
 #BPI012
