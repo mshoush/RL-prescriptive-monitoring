@@ -27,23 +27,34 @@ if [ "$mode" != "BL1" ] && [ "$mode" != "BL2" ]; then
     IFS=' ' read -r -a levels <<< "$resource_levels"
 fi
 
+if [ "$mode" != "BL1" ] && [ "$mode" != "BL2" ]; then
+    # Mode is not "BL1" or "BL2," so we vary the components
+    components=("all" "withoutTU" "withoutCIW" "withCATE")
+else
+    # Mode is "BL1" or "BL2," so set components to "all"
+    components=("all")
+fi
+
 for i in 1 2 3
 do
     if [ "$mode" != "BL1" ] && [ "$mode" != "BL2" ]; then
         for j in "${levels[@]}"
         do
-            # Rest of your script remains unchanged
-            echo "Component...all"
-            echo "Iter....$i"
-            echo "Start first: $log_name $mode" ;
-            echo "Start $mode..." ;
-            STARTTIME=$(date +%s)
-            echo "StartTime: $STARTTIME"            
-            python rl/ppo_temp_cost_reward_noPred.py "$mode" ./resultsICPMTest/"$log_name"/"$log_name"/"$resFolder"/all/"$mode$i"/"$mode$j" "$j" 1 5 25 10 60 "$log_name" all> out.txt;
-            ENDTIME=$(date +%s)
-            echo "ENDTIME: $ENDTIME"
-            echo "It takes $((ENDTIME - STARTTIME)) seconds to complete this task..."
-            rm out.txt&
+            for m in "${components[@]}"
+            do
+                # Rest of your script remains unchanged
+                echo "Component...$m"
+                echo "Iter....$i"
+                echo "Start first: $log_name $mode" ;
+                echo "Start $mode..." ;
+                STARTTIME=$(date +%s)
+                echo "StartTime: $STARTTIME"            
+                python rl/ppo_temp_cost_reward_noPred.py "$mode" ./resultsICPMTest/"$log_name"/"$log_name"/"$resFolder"/"$m"/"$mode$i"/"$mode$j" "$j" 1 5 25 10 60 "$log_name" "$m" > out.txt;
+                ENDTIME=$(date +%s)
+                echo "ENDTIME: $ENDTIME"
+                echo "It takes $((ENDTIME - STARTTIME)) seconds to complete this task..."
+                rm out.txt&
+            done
         done
     else
         # Handle the case when mode is "BL1" or "BL2" here, e.g., set mode to "zahra" or "metzger" and j to 1
@@ -66,3 +77,7 @@ do
         rm out.txt&
     fi
 done
+
+
+
+
