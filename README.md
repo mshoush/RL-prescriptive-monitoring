@@ -44,12 +44,12 @@ To reproduce the results, please run the following:
 
 *   Run the following shell script to conduct experiments involving different variants of the proposed approach as well as baseline methods:
 
-                                    ./run_extract_utilization_levels.sh
-                                    <log_name> <resFolder> <mode> <resource_levels>
-                                    taskset -c 0-7 ./run_variants_with_BLs.sh <log_name> <resFolder> <mode> <resource_levels>
+                                    ./run_extract_utilization_levels.sh <log_name> <resFolder> <mode> <resource_levels>
                                     log_name: ["bpic2012", "bpic2017", "trafficFines"]
                                     mode: ["BL1", "BL2", "ours" ]
-                                    Example: taskset -c 0-7 ./run_variants_with_BLs.sh bpic2012  resultsRL ours  "1 4 6 12"
+                                    resource_levels: as extracted from the previous step.
+    
+                                    Ex: taskset -c 0-7 ./run_variants_with_BLs.sh bpic2012  resultsRL ours  "1 4 6 12"
  
                                      
 
