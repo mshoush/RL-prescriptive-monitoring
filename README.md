@@ -44,7 +44,7 @@ To reproduce the results, please run the following:
 
 *   Run the following shell script to conduct experiments involving different variants of the proposed approach as well as baseline methods:
 
-                                    ./run_extract_utilization_levels.sh <log_name> <resFolder> <mode> <resource_levels>
+                                    ./run_variants_with_BLs.sh <log_name> <resFolder> <mode> <resource_levels>
                                     log_name: ["bpic2012", "bpic2017", "trafficFines"]
                                     mode: ["BL1", "BL2", "ours" ]
                                     resource_levels: as extracted from the previous step.
