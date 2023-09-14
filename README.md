@@ -37,7 +37,7 @@ To reproduce the results, please run the following:
                                      ./run_extract_utilization_levels.sh
 
     
-*   Compile results to extract the resource utilization level by executing the following notebook:
+*   Compile results to extract the resource utilization levels by executing the following notebook:
 
                                      extract_resource_utilization_levels.ipynb
 
@@ -53,13 +53,11 @@ To reproduce the results, please run the following:
  
                                      
 
-* Collect results according to RQ1 by running the following notebook: 
+* Finally, execute the following notebook to collect results regarding RQ1 and RQ2.: 
 
-                                     plot_all_resources.ipynb
+                                     compile_results.ipynb
                                      
-* Collect results according to RQ2 by running the following notebook: 
 
-                                     plot_RL_results.ipynb
 
 
 
