@@ -28,12 +28,13 @@ To reproduce the results, please run the following:
                                   prepare_data_bpic2017.ipynb
 
   
-*   Next, run the following shell script to start experiments w.r.t the offline and online phases. Replace  datasetName by bpic2012, bpic2017, or traficFines. 
+*   Next, run the following shell script to start experiments w.r.t the offline phase. 
 
+                                     ./run_offline_phase.sh
+    
+*   Then, execute the following shell script to initiate experiments with varying resource availability, thereby obtaining resource utilization levels.
 
-                                     ./runAll.sh
-                                     ./test_results.sh <datasetName> <resultsDir>
-                                     ./run_all_resources.sh <datasetName>
+                                     ./run_extract_utilization_levels.sh   
  
                                      
 
