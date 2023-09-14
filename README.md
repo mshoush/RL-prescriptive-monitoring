@@ -39,7 +39,7 @@ To reproduce the results, please run the following:
     
 *   Compile results to extract the resource utilization level by executing the following notebook:
 
-                                     Put it here
+                                     extract_resource_utilization_levels.ipynb
 
 
 *   Run the following shell script to conduct experiments involving different variants of the proposed approach as well as baseline methods:
