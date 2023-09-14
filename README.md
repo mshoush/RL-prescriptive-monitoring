@@ -21,20 +21,35 @@ To reproduce the results, please run the following:
 
 * Next, download the data folder from the abovementioned link
 
-* Then run the following notebooks to prepare the datasets:
+* Run the following notebooks to prepare the datasets:
   
                                   prepare_trafficFines.ipynb
                                   prepare_data_bpic2012.ipynb
                                   prepare_data_bpic2017.ipynb
 
   
-*   Next, run the following shell script to start experiments w.r.t the offline phase. 
+*   Run the following shell script to start experiments w.r.t the offline phase: 
 
                                      ./run_offline_phase.sh
     
-*   Then, execute the following shell script to initiate experiments with varying resource availability, thereby obtaining resource utilization levels.
+*   Execute the following shell script to initiate experiments with varying resource availability, thereby obtaining resource utilization levels:
 
-                                     ./run_extract_utilization_levels.sh   
+                                     ./run_extract_utilization_levels.sh
+
+    
+*   Compile results to extract the resource utilization level by executing the following notebook:
+
+                                     Put it here
+
+
+*   Run the following shell script to conduct experiments involving different variants of the proposed approach as well as baseline methods:
+
+                                    ./run_extract_utilization_levels.sh
+                                    <log_name> <resFolder> <mode> <resource_levels>
+                                    taskset -c 0-7 ./run_variants_with_BLs.sh <log_name> <resFolder> <mode> <resource_levels>
+                                    log_name: ["bpic2012", "bpic2017", "trafficFines"]
+                                    mode: ["BL1", "BL2", "ours" ]
+                                    Example: taskset -c 0-7 ./run_variants_with_BLs.sh bpic2012  resultsRL ours  "1 4 6 12"
  
                                      
 
